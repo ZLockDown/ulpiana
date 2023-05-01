@@ -21,7 +21,7 @@ function toggleMenu() {
 
   function goHome() {
     // Change "index.html" to the path of your home page, if different
-    const homePagePath = "../inicio.html";
+    const homePagePath = "../index.html";
     const currentPath = window.location.pathname;
 
     if (currentPath === homePagePath || currentPath === '/') {
@@ -34,7 +34,7 @@ function toggleMenu() {
   const myLink = document.querySelector('#star');
   myLink.addEventListener('click', function() {
     // Do something here, such as navigate to a different page using window.location.href
-    window.location.href = "../inicio.html";
+    window.location.href = "../index.html";
   });
 
   
