@@ -17,6 +17,30 @@
 
     </head>
     <body>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyCcsA9oWZ4WKHOt-BXlgbvnU3er0scoGYc",
+              authDomain: "ulpiana-32ffe.firebaseapp.com",
+              databaseURL: "https://ulpiana-32ffe-default-rtdb.firebaseio.com",
+              projectId: "ulpiana-32ffe",
+              storageBucket: "ulpiana-32ffe.appspot.com",
+              messagingSenderId: "127456238942",
+              appId: "1:127456238942:web:08a945e50c63ef67e403cf",
+              measurementId: "G-2EKZMHR4D2"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
         <header>
         <!--Navigation Bar-->
         <div class="navigation" id="firstNav">
