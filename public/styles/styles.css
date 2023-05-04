@@ -32,7 +32,7 @@ body {
 }
 
 .libros-libres-fondo{
-    background: linear-gradient( pink 0%, var(--blueish) 26%, var(--cream-gray) 26%, var(--cream) 38%,   var(--redish) 100%);
+    background: linear-gradient( #d6aca9  0%, var(--redish) 26%, var(--cream) 26%, var(--cream) 38%,   var(--redish) 100%);
     overflow-x: hidden;
 }
 
@@ -41,11 +41,11 @@ body {
 
 .home-button {
     position: fixed;
-    bottom: 5px;
+    bottom: 10px;
     right: 20px;
     border: none;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: var(--cooler-gray);
     width: 40px;
     height: 40px;
     text-align: center;
@@ -58,15 +58,17 @@ body {
   .home-button i{
     font-size: 30px;
   }
-
+  .home-button:hover{
+    background-color: var(--cream);
+  }
   .home-button i:hover{
-    color: var(--dorado);
+    color: var(--greenish);
   }
 
 
   @media (max-width: 770px) {
     .home-button {
-        background-color: var(--dorado);
+        background-color: var(--greenish);
         bottom: 20px;
         right: 20px;
         width: 50px;
@@ -79,7 +81,7 @@ body {
         color: white;
     }
     .home-button:hover {
-        background-color: #e9d596;
+        background-color: #9cb398;
       }
   }
 
@@ -208,7 +210,7 @@ i {
 }
 
 #facebook1:hover, #facebook2:hover, #instagram1:hover, #instagram2:hover, #twitter1:hover, #twitter2:hover {
-    fill: var(--blueish);
+    fill: var(--greenish);
 }
 
 #star {
@@ -248,13 +250,13 @@ i {
 }
 
 .navbar a:hover:not(.social-icon) {
-    color: var(--blueish);
+    color: var(--greenish);
     background-color: var(--cream-opacity);
 }
 
 
 .navbar #star:hover {
-    color: var(--blueish);
+    color: var(--greenish);
 }
 
 .navbar a.active {
@@ -1701,6 +1703,7 @@ h1{
 
 .llj-cr{
     color:rgba(224, 223, 211, 0.5);
+    margin-top: 40px;
 }
 
 .llj-icono{
@@ -1726,7 +1729,7 @@ h1{
     height: auto;
     z-index: 2;
     position: absolute;
-    transform: translateY(530px);
+    transform: translateY(565px);
 }
 
 @media screen and (max-width: 700px) {
@@ -1799,7 +1802,7 @@ h1{
     width: 100%;
     height: 5%;
     display: flex;
-    background-color: white;
+    background-color: #a3988f;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1847,7 +1850,7 @@ h1{
 }
 
 .navegación nav ul li a:hover{
-    background-color: var(--dorado);
+    background-color: var(--greenish);
     transition: color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
     color: white;
@@ -1968,6 +1971,8 @@ h1{
 
 }
 
+
+
 .adentro hr{
     width: 90%;
     margin: 20px;
@@ -2056,8 +2061,14 @@ h1{
     align-items: center;
     text-align: center;
     color: var(--dark);
-    overflow: hidden;
     text-align: justify;
+    z-index: 3;
+}
+@media (max-width: 500px){
+    #sentence{
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Pagina de contacto */
