@@ -1134,7 +1134,7 @@ h1{
 .texto h1{
     font-size: 50px;
     font-weight: 700;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 0px;
     color: var(--dark);
 }
@@ -1147,7 +1147,7 @@ h1{
 
 @media (max-width: 500px){
     .menus .texto h1{
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -1208,7 +1208,13 @@ h1{
     .seleccion li{
         display: flex;
         margin: 5px;
-
+        margin-bottom: 10px;
+    }
+    .seleccion li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
     }
 }
 .carta{
@@ -1271,7 +1277,7 @@ h1{
 }
 .texto{
     width: 100%;
-    height: 5%;
+    height: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
